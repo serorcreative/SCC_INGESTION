@@ -1,0 +1,17 @@
+{
+  "$note": "Catalogue des sources et de leurs zones d'atterrissage RAW sous 02_RAW_SOURCES. Purement déclaratif — consommé par les watchers et l'orchestration à venir.",
+  "sources": [
+    { "connector": "chatgpt",   "landing": "01_CHATGPT",   "enabled": true },
+    { "connector": "claude",    "landing": "00_CLAUDE",    "enabled": true },
+    { "connector": "github",    "landing": "05_GITHUB",    "enabled": true },
+    { "connector": "supabase",  "landing": "04_SUPABASE",  "enabled": true },
+    { "connector": "base44",    "landing": "03_BASE44",    "enabled": true },
+    { "connector": "documents", "landing": "07_DOCUMENTS", "enabled": true },
+    { "connector": "pdf",       "landing": "07_DOCUMENTS", "enabled": true },
+    { "connector": "markdown",  "landing": "07_DOCUMENTS", "enabled": true },
+    { "connector": "images",    "landing": "08_IMAGES",    "enabled": true },
+    { "connector": "audio",     "landing": "09_AUDIO",     "enabled": true },
+    { "connector": "video",     "landing": "10_VIDEO",     "enabled": true },
+    { "connector": "emails",    "landing": "06_EMAILS",    "enabled": true }
+  ]
+}

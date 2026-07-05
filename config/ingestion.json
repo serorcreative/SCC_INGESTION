@@ -1,0 +1,37 @@
+{
+  "$schema_note": "Configuration du moteur d'ingestion SCC. Chemins relatifs = relatifs à 01_INGESTION.",
+  "paths": {
+    "raw_sources_root": "../02_RAW_SOURCES",
+    "work_root": "queue",
+    "reports_dir": "reports",
+    "logs_dir": "logs",
+    "archive_dir": "queue/_archive",
+    "index_path": "queue/index.jsonl"
+  },
+  "chunking": {
+    "max_chars": 2000,
+    "overlap": 200,
+    "min_chars": 1
+  },
+  "enabled_sources": [
+    "chatgpt",
+    "claude",
+    "github",
+    "supabase",
+    "base44",
+    "documents",
+    "pdf",
+    "markdown",
+    "images",
+    "audio",
+    "video",
+    "emails"
+  ],
+  "classification_rules": {
+    "facturation": ["facture", "invoice", "montant", "tva"],
+    "juridique": ["contrat", "mise en demeure", "litige", "clause"],
+    "projet": ["projet", "roadmap", "phase", "livrable"],
+    "ia": ["prompt", "modèle", "llm", "agent", "embedding"]
+  },
+  "extra": {}
+}
